@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/colorPrimaryDark">
+    <LinearLayout
+            android:id="@+id/lnTrafficLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/tvTimeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lnTrafficLight"
+                android:layout_centerInParent="true"
+                android:text="30"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="96sp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgGreen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@color/color_green"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgOrange"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@color/color_orange"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgRed"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@color/color_rad"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
